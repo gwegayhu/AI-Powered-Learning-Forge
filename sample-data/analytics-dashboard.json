@@ -1,0 +1,99 @@
+{
+  "platformOverview": {
+    "totalUsers": 89432,
+    "totalCourses": 247,
+    "totalInstructors": 156,
+    "monthlyActiveUsers": 34567,
+    "courseCompletionRate": 0.68,
+    "averageRating": 4.7,
+    "totalCertificatesIssued": 12834
+  },
+  "revenueMetrics": {
+    "monthlyRecurringRevenue": 234500,
+    "averageRevenuePerUser": 6.78,
+    "subscriptionGrowth": 0.12,
+    "courseRevenue": 156780,
+    "subscriptionRevenue": 187900
+  },
+  "engagementMetrics": {
+    "averageSessionDuration": "24:36",
+    "dailyActiveUsers": 12456,
+    "weeklyActiveUsers": 28901,
+    "forumPostsPerDay": 234,
+    "averageCoursesPerUser": 2.3,
+    "videoWatchTime": "89.5%"
+  },
+  "coursePerformance": [
+    {
+      "courseId": "course_001",
+      "title": "Complete AI & Machine Learning Bootcamp 2024",
+      "enrollments": 12743,
+      "completionRate": 0.72,
+      "averageRating": 4.9,
+      "revenue": 45670,
+      "dropoffPoints": ["Module 3: Advanced Neural Networks", "Final Project"],
+      "averageTimeToComplete": "6.2 weeks"
+    },
+    {
+      "courseId": "course_002", 
+      "title": "Full Stack Web Development with React & Node.js",
+      "enrollments": 8934,
+      "completionRate": 0.65,
+      "averageRating": 4.8,
+      "revenue": 38920,
+      "dropoffPoints": ["Module 4: Database Integration", "Module 6: Deployment"],
+      "averageTimeToComplete": "8.1 weeks"
+    },
+    {
+      "courseId": "course_005",
+      "title": "Data Science & Analytics with Python", 
+      "enrollments": 15634,
+      "completionRate": 0.78,
+      "averageRating": 4.9,
+      "revenue": 67830,
+      "dropoffPoints": ["Module 5: Advanced Statistics", "Capstone Project"],
+      "averageTimeToComplete": "7.3 weeks"
+    }
+  ],
+  "aiFeatureMetrics": {
+    "recommendationClickRate": 0.34,
+    "chatbotUsage": {
+      "dailyInteractions": 1456,
+      "averageSessionLength": "4:23",
+      "resolutionRate": 0.87,
+      "userSatisfaction": 4.2
+    },
+    "adaptiveLearningImpact": {
+      "usersWithAdaptations": 2341,
+      "completionRateImprovement": 0.15,
+      "engagementIncrease": 0.23
+    },
+    "predictiveAnalytics": {
+      "atRiskUsersIdentified": 1234,
+      "interventionSuccessRate": 0.62,
+      "dropoutPrevention": 0.28
+    }
+  },
+  "userDemographics": {
+    "ageGroups": {
+      "18-24": 0.22,
+      "25-34": 0.45,
+      "35-44": 0.23,
+      "45-54": 0.08,
+      "55+": 0.02
+    },
+    "locations": {
+      "North America": 0.35,
+      "Europe": 0.28,
+      "Asia": 0.24,
+      "South America": 0.08,
+      "Africa": 0.03,
+      "Oceania": 0.02
+    },
+    "learnerTypes": {
+      "Students": 0.34,
+      "Working Professionals": 0.52,
+      "Career Changers": 0.14
+    }
+  }
+}

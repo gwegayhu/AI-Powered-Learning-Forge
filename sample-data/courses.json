@@ -1,0 +1,142 @@
+[
+  {
+    "id": "course_001",
+    "title": "Complete AI & Machine Learning Bootcamp 2024",
+    "category": "AI & Technology",
+    "level": "Intermediate",
+    "duration": "6 weeks",
+    "price": 89.99,
+    "originalPrice": 199.99,
+    "instructorId": "inst_001",
+    "description": "Master artificial intelligence and machine learning from the ground up with hands-on projects. This comprehensive bootcamp covers neural networks, deep learning, natural language processing, and computer vision. You'll build real-world AI applications including a recommendation system, chatbot, and image classifier. Perfect for developers, data scientists, and AI enthusiasts looking to advance their careers in the fastest-growing field in tech.",
+    "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop",
+    "enrolledStudents": 12743,
+    "rating": 4.9,
+    "modules": [
+      {
+        "id": "mod_001_01",
+        "title": "Introduction to AI and Machine Learning",
+        "lessons": [
+          {"id": "les_001_01_01", "title": "What is Artificial Intelligence?", "type": "video", "duration": "15:30"},
+          {"id": "les_001_01_02", "title": "Machine Learning vs Deep Learning", "type": "video", "duration": "12:45"},
+          {"id": "les_001_01_03", "title": "Setting Up Your AI Development Environment", "type": "video", "duration": "20:15"},
+          {"id": "les_001_01_04", "title": "Python for AI - Quick Refresher", "type": "interactive", "duration": "25:00"}
+        ]
+      },
+      {
+        "id": "mod_001_02",
+        "title": "Neural Networks Fundamentals",
+        "lessons": [
+          {"id": "les_001_02_01", "title": "How Neural Networks Work", "type": "video", "duration": "18:30"},
+          {"id": "les_001_02_02", "title": "Building Your First Neural Network", "type": "coding", "duration": "35:00"},
+          {"id": "les_001_02_03", "title": "Activation Functions Explained", "type": "video", "duration": "14:20"}
+        ]
+      }
+    ],
+    "assessments": [
+      {
+        "id": "quiz_001_01",
+        "title": "AI Fundamentals Quiz",
+        "questions": [
+          {
+            "question": "What is the main difference between supervised and unsupervised learning?",
+            "options": ["Supervised uses labeled data, unsupervised doesn't", "Supervised is faster", "Unsupervised is more accurate", "No difference"],
+            "correct": 0
+          },
+          {
+            "question": "Which of these is NOT a type of machine learning?",
+            "options": ["Supervised Learning", "Reinforcement Learning", "Cognitive Learning", "Unsupervised Learning"],
+            "correct": 2
+          }
+        ]
+      }
+    ],
+    "tags": ["AI", "Machine Learning", "Python", "Neural Networks", "Data Science"]
+  },
+  {
+    "id": "course_002",
+    "title": "Full Stack Web Development with React & Node.js",
+    "category": "Web Development",
+    "level": "Beginner",
+    "duration": "8 weeks",
+    "price": 79.99,
+    "originalPrice": 159.99,
+    "instructorId": "inst_002",
+    "description": "Build modern web applications from scratch using the most popular technologies. Learn React for dynamic frontends, Node.js for powerful backends, and MongoDB for flexible databases. This project-based course includes building a social media app, e-commerce platform, and portfolio website. Perfect for aspiring web developers who want to land their first tech job or freelance successfully.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop",
+    "enrolledStudents": 8934,
+    "rating": 4.8,
+    "modules": [
+      {
+        "id": "mod_002_01",
+        "title": "Frontend Foundations with React",
+        "lessons": [
+          {"id": "les_002_01_01", "title": "React Basics and JSX", "type": "video", "duration": "22:15"},
+          {"id": "les_002_01_02", "title": "Components and Props", "type": "coding", "duration": "30:45"},
+          {"id": "les_002_01_03", "title": "State Management with Hooks", "type": "video", "duration": "28:30"}
+        ]
+      }
+    ],
+    "tags": ["React", "Node.js", "JavaScript", "Web Development", "Full Stack"]
+  },
+  {
+    "id": "course_003",
+    "title": "Digital Marketing & Growth Hacking Masterclass",
+    "category": "Business & Marketing",
+    "level": "Intermediate",
+    "duration": "5 weeks",
+    "price": 69.99,
+    "originalPrice": 139.99,
+    "instructorId": "inst_003",
+    "description": "Master the art and science of digital marketing in today's competitive landscape. Learn proven strategies for SEO, social media marketing, email campaigns, and conversion optimization. This course covers advanced growth hacking techniques used by successful startups and Fortune 500 companies. Includes real case studies, hands-on projects, and templates you can use immediately.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+    "enrolledStudents": 6721,
+    "rating": 4.7,
+    "tags": ["Digital Marketing", "SEO", "Social Media", "Growth Hacking", "Analytics"]
+  },
+  {
+    "id": "course_004",
+    "title": "UI/UX Design Psychology & Principles",
+    "category": "Design & Creative",
+    "level": "Intermediate",
+    "duration": "6 weeks",
+    "price": 84.99,
+    "originalPrice": 169.99,
+    "instructorId": "inst_004",
+    "description": "Design user experiences that convert and delight users. This comprehensive course covers design psychology, user research methods, wireframing, prototyping, and usability testing. Learn how to create intuitive interfaces that solve real problems while looking beautiful. Includes industry-standard tools like Figma, Adobe XD, and user testing platforms.",
+    "image": "https://images.unsplash.com/photo-1586717799252-bd134ad00e26?w=400&h=300&fit=crop",
+    "enrolledStudents": 9234,
+    "rating": 4.8,
+    "tags": ["UI Design", "UX Design", "Figma", "User Research", "Prototyping"]
+  },
+  {
+    "id": "course_005",
+    "title": "Data Science & Analytics with Python",
+    "category": "Data Science",
+    "level": "Advanced",
+    "duration": "7 weeks",
+    "price": 99.99,
+    "originalPrice": 249.99,
+    "instructorId": "inst_005",
+    "description": "Transform raw data into actionable insights using Python's most powerful libraries. Master pandas for data manipulation, matplotlib for visualization, and scikit-learn for machine learning. This advanced course covers statistical analysis, predictive modeling, and big data processing. Perfect for analysts, researchers, and professionals who want to make data-driven decisions.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+    "enrolledStudents": 15634,
+    "rating": 4.9,
+    "tags": ["Python", "Data Science", "Analytics", "Statistics", "Machine Learning"]
+  },
+  {
+    "id": "course_006",
+    "title": "Blockchain & Cryptocurrency Fundamentals",
+    "category": "Technology & Finance",
+    "level": "Beginner",
+    "duration": "4 weeks",
+    "price": 59.99,
+    "originalPrice": 119.99,
+    "instructorId": "inst_006",
+    "description": "Understand the revolutionary technology behind cryptocurrencies and decentralized applications. This beginner-friendly course explains blockchain concepts, cryptocurrency trading, smart contracts, and DeFi protocols. No technical background required - perfect for investors, entrepreneurs, and curious individuals who want to understand the future of finance.",
+    "image": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=300&fit=crop",
+    "enrolledStudents": 4321,
+    "rating": 4.6,
+    "tags": ["Blockchain", "Cryptocurrency", "DeFi", "Smart Contracts", "Finance"]
+  }
+]

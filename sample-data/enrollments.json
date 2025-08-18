@@ -1,0 +1,75 @@
+[
+  {
+    "id": "enroll_001",
+    "userId": "user_001",
+    "courseId": "course_001",
+    "enrollmentDate": "2024-01-20",
+    "status": "in-progress",
+    "progress": 65,
+    "lastAccessedDate": "2024-01-28",
+    "completedModules": ["mod_001_01"],
+    "currentModule": "mod_001_02",
+    "timeSpent": 42.5,
+    "quizScores": [
+      {"quizId": "quiz_001_01", "score": 85, "attempts": 1, "completedDate": "2024-01-22"}
+    ]
+  },
+  {
+    "id": "enroll_002",
+    "userId": "user_001",
+    "courseId": "course_003",
+    "enrollmentDate": "2023-12-15",
+    "status": "completed",
+    "progress": 100,
+    "completionDate": "2024-01-10",
+    "lastAccessedDate": "2024-01-10",
+    "completedModules": ["mod_003_01", "mod_003_02", "mod_003_03"],
+    "timeSpent": 89.3,
+    "finalGrade": 92,
+    "certificateIssued": true,
+    "certificateId": "cert_001"
+  },
+  {
+    "id": "enroll_003",
+    "userId": "user_002",
+    "courseId": "course_002",
+    "enrollmentDate": "2024-02-05",
+    "status": "in-progress",
+    "progress": 23,
+    "lastAccessedDate": "2024-02-15",
+    "completedModules": [],
+    "currentModule": "mod_002_01",
+    "timeSpent": 18.7,
+    "quizScores": []
+  },
+  {
+    "id": "enroll_004",
+    "userId": "user_003",
+    "courseId": "course_005",
+    "enrollmentDate": "2023-11-25",
+    "status": "completed",
+    "progress": 100,
+    "completionDate": "2024-01-05",
+    "lastAccessedDate": "2024-01-15",
+    "completedModules": ["mod_005_01", "mod_005_02", "mod_005_03", "mod_005_04"],
+    "timeSpent": 156.8,
+    "finalGrade": 96,
+    "certificateIssued": true,
+    "certificateId": "cert_002"
+  },
+  {
+    "id": "enroll_005",
+    "userId": "user_004",
+    "courseId": "course_004",
+    "enrollmentDate": "2024-01-12",
+    "status": "in-progress",
+    "progress": 45,
+    "lastAccessedDate": "2024-01-27",
+    "completedModules": ["mod_004_01"],
+    "currentModule": "mod_004_02",
+    "timeSpent": 34.2,
+    "quizScores": [
+      {"quizId": "quiz_004_01", "score": 78, "attempts": 2, "completedDate": "2024-01-18"}
+    ]
+  }
+]
