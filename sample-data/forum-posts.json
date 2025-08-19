@@ -1,71 +1,69 @@
 [
   {
     "id": "post_001",
-    "courseId": "course_001",
-    "userId": "user_001",
+    "course_id": "course_001",
+    "author_id": "learner_001",
     "title": "Neural Network Training Tips - What I've Learned",
     "content": "After struggling with my first neural network project, I discovered some key tips that really helped:\n\n1. **Start simple** - Don't jump to complex architectures immediately\n2. **Check your data** - Garbage in, garbage out is especially true for AI\n3. **Monitor loss curves** - They tell you so much about what's happening\n4. **Learning rate matters** - Too high and it won't converge, too low and it takes forever\n\nAnyone else have insights to share? What were your biggest 'aha' moments?",
-    "timestamp": "2024-01-23T16:45:00Z",
     "likes": 12,
+    "is_pinned": false,
     "replies": [
       {
         "id": "reply_001", 
-        "userId": "user_003",
+        "author_id": "learner_003",
         "content": "Great points Maya! I'd add that feature scaling/normalization is crucial. I spent hours debugging why my network wasn't learning, turned out my input features were on completely different scales.",
-        "timestamp": "2024-01-23T17:20:00Z",
-        "likes": 8
+        "likes": 8,
+        "is_instructor": false
       },
       {
         "id": "reply_002",
-        "userId": "user_002", 
+        "author_id": "learner_002", 
         "content": "This is so helpful! I'm just starting the course and feeling overwhelmed. The 'start simple' advice really resonates - I was trying to build something way too complex.",
-        "timestamp": "2024-01-23T19:30:00Z",
-        "likes": 5
+        "likes": 5,
+        "is_instructor": false
       }
     ]
   },
   {
     "id": "post_002",
-    "courseId": "course_002",
-    "userId": "user_002",
+    "course_id": "course_002",
+    "author_id": "learner_002",
     "title": "Help: React useEffect Hook Confusion",
     "content": "I'm working through the React hooks module and I'm confused about useEffect dependencies. Sometimes the component re-renders infinitely, sometimes it doesn't update when I expect it to.\n\nCan someone explain the dependency array in simple terms? When should it be empty vs when should I include variables?\n\nHere's my code that's causing issues:\n```javascript\nuseEffect(() => {\n  fetchUserData();\n}, [user]);\n```",
-    "timestamp": "2024-02-10T14:20:00Z",
     "likes": 6,
+    "is_pinned": false,
     "replies": [
       {
         "id": "reply_003",
-        "userId": "inst_002",
+        "author_id": "inst_002",
         "content": "Great question Alexandra! The dependency array tells React when to re-run the effect:\n\n- `[]` (empty): Run once after initial render\n- `[user]`: Run when 'user' changes\n- No array: Run after every render (usually not what you want)\n\nYour code looks correct if you want to fetch data when the user changes. The infinite loop usually happens when you modify state inside useEffect without proper dependencies. Are you updating 'user' inside fetchUserData()?",
-        "timestamp": "2024-02-10T15:45:00Z", 
         "likes": 15,
-        "isInstructor": true
+        "is_instructor": true
       }
     ]
   },
   {
     "id": "post_003",
-    "courseId": "course_004",
-    "userId": "user_004", 
+    "course_id": "course_004",
+    "author_id": "learner_004", 
     "title": "Figma vs Adobe XD - Which Should I Focus On?",
     "content": "I'm halfway through the UI/UX course and loving it! But I'm wondering about tool choice. The course covers both Figma and Adobe XD, but I want to focus my energy on becoming really proficient in one.\n\nWhich tool do you think has better career prospects? I'm seeing a lot of job postings mention Figma specifically.\n\nWhat are your experiences with both tools?",
-    "timestamp": "2024-01-20T11:30:00Z",
     "likes": 9,
+    "is_pinned": false,
     "replies": [
       {
         "id": "reply_004",
-        "userId": "user_001",
+        "author_id": "learner_001",
         "content": "I'm not a designer but I work closely with UX team at my company. They all use Figma and love the collaborative features. From what I see, Figma seems to be winning the market.",
-        "timestamp": "2024-01-20T13:15:00Z",
-        "likes": 4
+        "likes": 4,
+        "is_instructor": false
       },
       {
         "id": "reply_005",
-        "userId": "inst_004",
+        "author_id": "inst_004",
         "content": "Sofia, great question! Based on current industry trends, I'd recommend focusing on Figma. Here's why:\n\n1. **Market adoption** - Figma has rapidly become the industry standard\n2. **Collaboration** - Real-time collaboration is game-changing for teams\n3. **Web-based** - Works on any platform, no software installation needed\n4. **Community** - Huge library of plugins and resources\n\nThat said, the core UX principles are the same regardless of tool. Master the thinking, and you can adapt to any software!",
-        "timestamp": "2024-01-20T16:00:00Z",
         "likes": 18,
-        "isInstructor": true
+        "is_instructor": true
       }
     ]
   }
