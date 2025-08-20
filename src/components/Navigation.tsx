@@ -1,84 +1,117 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, GraduationCap } from "lucide-react";
+import { Menu, X, BookOpen } from "lucide-react";
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
-  const navLinks = [
-    { name: "Courses", href: "#courses" },
-    { name: "About", href: "#about" },
-    { name: "For Business", href: "#business" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Blog", href: "#blog" },
-  ];
+  const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
-              <GraduationCap className="w-6 h-6 text-white" />
-            </div>
-            <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <Link to="/" className="flex items-center space-x-2">
+            <BookOpen className="w-8 h-8 text-primary" />
+            <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
               AIcademy
             </span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
-              >
-                {link.name}
-              </a>
-            ))}
-          </div>
-
-          {/* Desktop CTA Buttons */}
-          <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost">Log In</Button>
-            <Button>Sign Up</Button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            <Link 
+              to="/courses" 
+              className={`transition-colors ${isActive('/courses') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
             >
-              {isMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </Button>
+              Courses
+            </Link>
+            <Link 
+              to="/instructors" 
+              className={`transition-colors ${isActive('/instructors') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
+              Instructors
+            </Link>
+            <Link 
+              to="/dashboard" 
+              className={`transition-colors ${isActive('/dashboard') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
+              Dashboard
+            </Link>
+            <Link 
+              to="/forum" 
+              className={`transition-colors ${isActive('/forum') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
+              Forum
+            </Link>
+            <Link 
+              to="/analytics" 
+              className={`transition-colors ${isActive('/analytics') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
+              Analytics
+            </Link>
           </div>
+
+          {/* CTA Buttons */}
+          <div className="hidden md:flex items-center space-x-4">
+            <Button variant="ghost">Sign In</Button>
+            <Button>Get Started</Button>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border/50">
+          <div className="md:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-foreground hover:text-primary transition-colors font-medium px-2 py-1"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-              ))}
-              <div className="flex flex-col gap-2 mt-4 pt-4 border-t border-border/50">
-                <Button variant="ghost" className="justify-start">Log In</Button>
-                <Button className="justify-start">Sign Up</Button>
+              <Link 
+                to="/courses" 
+                className={`transition-colors ${isActive('/courses') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Courses
+              </Link>
+              <Link 
+                to="/instructors" 
+                className={`transition-colors ${isActive('/instructors') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Instructors
+              </Link>
+              <Link 
+                to="/dashboard" 
+                className={`transition-colors ${isActive('/dashboard') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Dashboard
+              </Link>
+              <Link 
+                to="/forum" 
+                className={`transition-colors ${isActive('/forum') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Forum
+              </Link>
+              <Link 
+                to="/analytics" 
+                className={`transition-colors ${isActive('/analytics') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Analytics
+              </Link>
+              <div className="flex flex-col space-y-2 pt-4">
+                <Button variant="ghost">Sign In</Button>
+                <Button>Get Started</Button>
               </div>
             </div>
           </div>
