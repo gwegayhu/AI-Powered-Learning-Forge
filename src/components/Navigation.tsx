@@ -53,6 +53,12 @@ const Navigation = () => {
             >
               Analytics
             </Link>
+            <Link 
+              to="/tables" 
+              className={`transition-colors ${isActive('/tables') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+            >
+              Tables
+            </Link>
           </div>
 
           {/* CTA Buttons */}
@@ -108,6 +114,13 @@ const Navigation = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Analytics
+              </Link>
+              <Link 
+                to="/tables" 
+                className={`transition-colors ${isActive('/tables') ? 'text-primary' : 'text-foreground hover:text-primary'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Tables
               </Link>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="ghost">Sign In</Button>
